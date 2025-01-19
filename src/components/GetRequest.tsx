@@ -1,12 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-
-interface IData {
-    userId: number,
-    id: number,
-    title: string,
-    body: string
-}
+import { IData } from '../IData.interface';
 
 const GetRequest = () => {
 
