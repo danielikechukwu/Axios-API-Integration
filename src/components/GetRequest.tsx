@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import { IData } from '../IData.interface';
+import { api } from '../config';
 
 const GetRequest = () => {
 
@@ -10,7 +11,16 @@ const GetRequest = () => {
     // performing side effect
     useEffect(() => {
 
-        axios.get('https://jsonplaceholder.typicode.com/posts')
+        // axios.get('https://jsonplaceholder.typicode.com/posts')
+        //     .then((response) => {
+        //         setData(response.data);
+        //         setLoading(false)
+        //     })
+        //     .catch((error: Error) => {
+        //         console.log("Error occurred while fetching data : ", error);
+        //     })
+
+            api.get("/posts")
             .then((response) => {
                 setData(response.data);
                 setLoading(false)

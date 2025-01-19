@@ -1,6 +1,7 @@
 import './App.css'
 import GetRequest from './components/GetRequest'
 import PostRequest from './components/PostRequest'
+import UploadFile from './components/UploadFile'
 
 function App() {
 
@@ -10,7 +11,10 @@ function App() {
 
       {/* <GetRequest /> */}
 
-      <PostRequest />
+      {/* <PostRequest /> */}
+
+      <UploadFile />
+      
     </>
   )
 }
