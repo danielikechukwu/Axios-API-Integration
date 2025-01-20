@@ -8,6 +8,8 @@ const GetRequest = () => {
     const [data, setData] = useState([]);
     const [loading, setLoading] = useState(true);
 
+    
+
     // performing side effect
     useEffect(() => {
 

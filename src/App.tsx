@@ -9,12 +9,12 @@ function App() {
     <>
       <h3>Home page</h3>
 
-      {/* <GetRequest /> */}
+      <GetRequest />
 
       {/* <PostRequest /> */}
 
-      <UploadFile />
-      
+      {/* <UploadFile /> */}
+
     </>
   )
 }
